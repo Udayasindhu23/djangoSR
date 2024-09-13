@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Prediction Result</title>
+</head>
+<body>
+    <h1>Health Prediction Result</h1>
+    <p>Your health status is: <strong>{{ health_status }}</strong></p>
+
+    <h2>Medical Assistance Recommendations</h2>
+    <p>{{ assistance }}</p>
+
+    <a href="{% url 'predict_health' %}">Make another prediction</a>
+</body>
+</html>
